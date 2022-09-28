@@ -28,7 +28,7 @@ def calculate_frequency(file):
     # Create wordClound
     cloud = wordcloud.WordCloud()
     cloud.generate_from_frequencies(word_count)
-    cloud.to_file(file_path)
+    cloud.to_file("wordcloud.png")
 
 # Input file
 file_path = input("Enter file location: ")
